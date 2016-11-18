@@ -1,21 +1,13 @@
-# pkg-version-cli
+## pkg-version-cli Changelog
 
-## Intro
-Simple CLI to return package.json version information for current directory
+### Overview
+See README.md for installation and configuration details
+
+### Just the changes
+
+- 1.0.0: First tagged release
 
 
-Install
-
-```
-$ npm i -g pkg-verison-cli
-```
-
-Usage
-
-```
-$ package-version
-Current Version: #.#.# <-- returns current version
-```
 
 ## Credits
 

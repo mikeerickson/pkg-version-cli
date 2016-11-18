@@ -1,13 +1,14 @@
 {
   "name": "pkg-version-cli",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple CLI to return package.json version information for current directory",
   "main": "cli.js",
   "bin": {
     "package-version": "cli.js"
   },
   "scripts": {
-    "test": "mocha"
+    "eslint": "eslint \"./**/*.js\"",
+    "test": "npm run eslint && mocha"
   },
   "keywords": [
     "node",
@@ -34,5 +35,8 @@
   },
   "devDependencies": {
     "mocha": "3.1.2"
+  },
+  "xo": {
+    "esnext": true
   }
 }

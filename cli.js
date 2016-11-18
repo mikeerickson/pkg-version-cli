@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
+const fs    = require('fs');
 const meow  = require('meow');
 const chalk = require('chalk');
-const fs    = require('fs');
 
 const cli = meow(`
 	Usage
