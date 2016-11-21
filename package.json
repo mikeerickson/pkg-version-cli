@@ -1,5 +1,5 @@
 {
-  "namee": "pkg-version-cli",
+  "name": "pkg-version-cli",
   "version": "1.0.3",
   "description": "Simple CLI to return package.json version information for current directory",
   "main": "cli.js",
