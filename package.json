@@ -1,6 +1,6 @@
 {
   "name": "pkg-version-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple CLI to return package.json version information for current directory",
   "main": "cli.js",
   "bin": {

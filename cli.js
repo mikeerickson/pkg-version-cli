@@ -25,7 +25,7 @@ console.log('');
 if (fs.existsSync(filename)) {
   const pkgInfo = require(filename);
 	if ((pkgInfo.name) && (pkgInfo.version)) {
-    console.log(chalk.white.bold('==> Package Information'));
+    console.log(chalk.white.bold(`==> Package Information (${chalk.cyan(path.basename(filename))})`));
 		console.log(`    ${chalk.green.bold(pkgInfo.name)} ${chalk.white.bold('v' + pkgInfo.version)}`);
 	}
 	else {
