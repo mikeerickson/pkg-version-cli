@@ -1,7 +1,7 @@
 # pkg-version-cli
 
 ## Intro
-Simple CLI to return package.json version information for current directory
+Simple CLI to return package.json version information for current directory. In addition, you can supply a different filename (instead of default package.json)
 
 
 Install
@@ -15,6 +15,12 @@ Usage
 ```
 $ package-version
 Current Version: #.#.# <-- returns current version
+```
+
+You can also supply an alternate json file (requires name and version properties)
+
+```
+$ package-version test.json
 ```
 
 ## Credits

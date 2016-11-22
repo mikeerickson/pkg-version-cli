@@ -21,7 +21,6 @@ if (argv._.length > 0) {
   filename = process.env.PWD + '/' + argv._[0];
 }
 
-console.log('');
 if (fs.existsSync(filename)) {
   const pkgInfo = require(filename);
 	if ((pkgInfo.name) && (pkgInfo.version)) {
