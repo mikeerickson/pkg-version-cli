@@ -1,8 +1,8 @@
-const gulp   = require('gulp');
+const config = require('./gulp.config.js');
 const eslint = require('gulp-eslint');
+const gulp   = require('gulp');
 const mocha  = require('gulp-mocha');
 const msg    = require('gulp-messenger');
-const config = require('./gulp.config.js');
 const todo   = require('gulp-todo');
 
 gulp.task('eslint', () => {
@@ -29,16 +29,16 @@ gulp.task('todo', () =>{
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch:eslint', ['eslint'], () => {
+gulp.task('watch:eslint', ['eslint','todo'], () => {
   msg.note('==> Watching ESLint Scripts');
-  gulp.watch('./**/*.js', ['eslint']);
+  gulp.watch('./**/*.js', ['eslint','todo']);
 });
 
 gulp.task('watch:test', ['test'], () => {
   msg.note('==> Watching Test Scripts');
-  gulp.watch('./**/*.js', ['test']);
+  gulp.watch('./**/*.js', ['test','todo']);
 });
 
 gulp.task('watch', ['watch:eslint','watch:test']);
 
-gulp.task('default',['eslint','test']);
+gulp.task('default',['eslint','test','todo']);

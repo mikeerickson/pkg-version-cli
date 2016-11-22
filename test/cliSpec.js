@@ -27,6 +27,3 @@ describe(chalk.cyan.bold('==> pkg-version-cli'), () => {
 	}).timeout(3000);
 
 });
-
-
-// TODO: Test todo
