@@ -1,2 +1,5 @@
 node_modules
 .history
+gulpfile.js
+gulp.config.js
+TODO.*
