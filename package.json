@@ -3,6 +3,7 @@
   "version": "1.0.6",
   "description": "Simple CLI to return package.json version information for current directory",
   "main": "cli.js",
+  "reveal": true,
   "bin": {
     "package-version": "cli.js"
   },
